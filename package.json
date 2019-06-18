@@ -15,7 +15,7 @@
   "scripts": {
     "commit": "git-cz",
     "semantic-release": "semantic-release",
-    "test": "true"
+    "test": "echo 1"
   },
   "husky": {
     "hooks": {
