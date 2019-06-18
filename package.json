@@ -12,7 +12,7 @@
     }
   },
   "scripts": {
-    "cz": "git-cz"
+    "commit": "git-cz"
   },
   "husky": {
     "hooks": {
