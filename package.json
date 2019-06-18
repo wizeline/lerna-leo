@@ -9,5 +9,8 @@
     "commitizen": {
       "path": "./node_modules/cz-lerna-changelog"
     }
+  },
+  "scripts": {
+    "cz": "git-cz"
   }
 }
