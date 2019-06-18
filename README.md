@@ -2,7 +2,7 @@
 
 [![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-
+[![travis build](https://img.shields.io/travis/com/wizeline/lerna-leo.svg)](https://travis-ci.com/wizeline/lerna-leo/)
 
 Setup
 
