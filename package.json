@@ -3,6 +3,7 @@
   "private": true,
   "devDependencies": {
     "cz-lerna-changelog": "2.0.2",
+    "husky": "2.4.1",
     "lerna": "^3.4.3"
   },
   "config": {
@@ -12,5 +13,10 @@
   },
   "scripts": {
     "cz": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "prepare-commit-msg": "exec < /dev/tty && git cz --hook"
+    }
   }
 }
