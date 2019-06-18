@@ -1,10 +1,11 @@
 {
-  "name": "root",
+  "name": "@wizeline/lerna-leo",
   "private": true,
   "devDependencies": {
     "cz-lerna-changelog": "2.0.2",
     "husky": "2.4.1",
-    "lerna": "^3.4.3"
+    "lerna": "^3.4.3",
+    "semantic-release": "^15.13.16"
   },
   "config": {
     "commitizen": {
@@ -12,11 +13,45 @@
     }
   },
   "scripts": {
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "semantic-release": "semantic-release"
   },
   "husky": {
     "hooks": {
       "prepare-commit-msg": "exec < /dev/tty && git cz --hook"
     }
-  }
+  },
+  "release": {
+    "prepare": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ],
+    "verifyConditions": [
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ]
+  },
+  "version": "0.0.0-development",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizeline/lerna-leo.git"
+  },
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "description": "[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)",
+  "bugs": {
+    "url": "https://github.com/wizeline/lerna-leo/issues"
+  },
+  "homepage": "https://github.com/wizeline/lerna-leo#readme",
+  "main": "index.js",
+  "dependencies": {},
+  "keywords": [
+    "lerning",
+    "leo"
+  ],
+  "author": "Leo Urzua <d.leonardo.urzua@gmail.com>",
+  "license": "MIT"
 }
