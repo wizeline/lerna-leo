@@ -22,7 +22,7 @@
   },
   "scripts": {
     "tsc": "tsc",
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "echo \"Error: run tests from root\" && exit 2"
   },
   "bugs": {
     "url": "https://github.com/wizeline/lerna-leo/issues"
