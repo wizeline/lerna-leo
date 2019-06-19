@@ -1,6 +1,6 @@
 {
   "name": "@wizeline/lerna-leo",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "cz-lerna-changelog": "2.0.2",
     "husky": "2.4.1",
