@@ -21,7 +21,7 @@
     "semantic-release": "lerna-semantic-release pre && lerna-semantic-release post && lerna-semantic-release perform",
     "postinstall": "lerna bootstrap",
     "bootstrap": "lerna bootstrap",
-    "ci-publish": "lerna run tsc && lerna publish --access public"
+    "ci-publish": "lerna run tsc && lerna publish"
   },
   "release": {
     "prepare": [
