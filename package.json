@@ -5,6 +5,7 @@
     "cz-lerna-changelog": "2.0.2",
     "husky": "2.4.1",
     "lerna": "^3.15.0",
+    "lerna-semantic-release": "9.1.0",
     "semantic-release": "^15.13.16",
     "typescript": "3.5.2"
   },
@@ -14,11 +15,11 @@
     }
   },
   "scripts": {
-    "commit": "git-cz",
-    "semantic-release": "semantic-release",
+    "commit": "npx git-cz",
+    "semantic-release": "lerna-semantic-release pre && lerna-semantic-release post && lerna-semantic-release perform",
+    "postinstall": "lerna bootstrap",
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna run tsc && lerna publish",
-    "publish-2": "lerna-semantic-release"
+    "ci-publish": "lerna run tsc && lerna publish"
   },
   "release": {
     "prepare": [
