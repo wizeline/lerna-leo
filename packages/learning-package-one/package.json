@@ -33,5 +33,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "typings": "lib/learning-package-one.d.ts"
+  "typings": "lib/learning-package-one.d.ts",
+  "gitHead": "d8234c7563ddc4fbfa6a9d0f79cb7df18b1f6c8d"
 }
