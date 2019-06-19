@@ -1,0 +1,34 @@
+{
+  "name": "@wizeline/learning-package-two",
+  "version": "0.0.0",
+  "description": "two",
+  "keywords": [
+    "test"
+  ],
+  "author": "Leo Urzua <d.leonardo.urzua@gmail.com>",
+  "homepage": "https://github.com/wizeline/lerna-leo/tree/master/packages/learning-package-two#readme",
+  "license": "MIT",
+  "main": "lib/learning-package-two.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wizeline/lerna-leo.git"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/wizeline/lerna-leo/issues"
+  },
+  "devDependencies": {
+    "typescript": "3.5.2"
+  },
+  "typings": "lib/learning-package-two.d.ts"
+}

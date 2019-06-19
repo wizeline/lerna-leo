@@ -1,0 +1,11 @@
+# `learning-package-two`
+
+> TODO: description
+
+## Usage
+
+```
+const learningPackageTwo = require('learning-package-two');
+
+// TODO: DEMONSTRATE API
+```

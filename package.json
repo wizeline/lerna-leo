@@ -4,8 +4,9 @@
   "devDependencies": {
     "cz-lerna-changelog": "2.0.2",
     "husky": "2.4.1",
-    "lerna": "^3.4.3",
-    "semantic-release": "^15.13.16"
+    "lerna": "^3.15.0",
+    "semantic-release": "^15.13.16",
+    "typescript": "3.5.2"
   },
   "config": {
     "commitizen": {
@@ -15,7 +16,8 @@
   "scripts": {
     "commit": "git-cz",
     "semantic-release": "semantic-release",
-    "test": "echo 1"
+    "bootstrap": "lerna bootstrap",
+    "publish": "lerna run tsc && lerna publish"
   },
   "husky": {
     "hooks": {
@@ -48,11 +50,13 @@
   },
   "homepage": "https://github.com/wizeline/lerna-leo#readme",
   "main": "index.js",
-  "dependencies": {},
   "keywords": [
     "lerning",
     "leo"
   ],
   "author": "Leo Urzua <d.leonardo.urzua@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
 }
