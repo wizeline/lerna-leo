@@ -17,12 +17,8 @@
     "commit": "git-cz",
     "semantic-release": "semantic-release",
     "bootstrap": "lerna bootstrap",
-    "publish": "lerna run tsc && lerna publish"
-  },
-  "husky": {
-    "hooks": {
-      "prepare-commit-msg": "exec < /dev/tty && git cz --hook"
-    }
+    "publish": "lerna run tsc && lerna publish",
+    "publish-2": "lerna-semantic-release"
   },
   "release": {
     "prepare": [
