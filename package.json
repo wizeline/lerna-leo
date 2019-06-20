@@ -19,7 +19,8 @@
     "postinstall": "lerna bootstrap",
     "bootstrap": "lerna bootstrap",
     "ci-publish": "semantic-release && lerna run tsc && lerna publish",
-    "publish": "lerna run tsc && lerna-semantic-release pre && lerna-semantic-release post && lerna-semantic-release perform && lerna publish"
+    "publish": "lerna run tsc && lerna-semantic-release pre && lerna-semantic-release post && lerna-semantic-release perform && lerna publish",
+    "publish-b": "lerna run tsc && lerna publish"
   },
   "version": "0.2.0",
   "repository": {
