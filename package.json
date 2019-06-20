@@ -21,7 +21,6 @@
     "test": "echo test root",
     "commit": "npx git-cz",
     "postinstall": "lerna bootstrap",
-    "semantic-release": "lerna-semantic-release pre && lerna-semantic-release post && lerna-semantic-release perform",
     "bootstrap": "lerna bootstrap",
     "ci-publish": "semantic-release && lerna run tsc && lerna publish"
   },
