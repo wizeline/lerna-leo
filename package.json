@@ -38,7 +38,6 @@
     "url": "https://github.com/wizeline/lerna-leo/issues"
   },
   "release": {
-    "branch": "develop",
     "prepare": [
       "@semantic-release/changelog",
       "@semantic-release/npm",
