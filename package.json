@@ -1,5 +1,5 @@
 {
-  "name": "@wizeline/lerna-leo",
+  "name": "@evolsignal/lerna-leo",
   "private": false,
   "devDependencies": {
     "@semantic-release/changelog": "3.0.1",
@@ -19,6 +19,7 @@
     }
   },
   "scripts": {
+    "test": "echo test root",
     "commit": "npx git-cz",
     "postinstall": "lerna bootstrap",
     "semantic-release": "lerna-semantic-release pre && lerna-semantic-release post && lerna-semantic-release perform",
