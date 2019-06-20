@@ -1,3 +1,10 @@
+## [0.3.8](https://github.com/wizeline/lerna-leo/compare/v0.3.7...v0.3.8) (2019-06-20)
+
+
+### Bug Fixes
+
+* **test:** pass ([0a5ff83](https://github.com/wizeline/lerna-leo/commit/0a5ff83))
+
 ## [0.2.3](https://github.com/wizeline/lerna-leo/compare/v0.2.2...v0.2.3) (2019-06-20)
 
 
