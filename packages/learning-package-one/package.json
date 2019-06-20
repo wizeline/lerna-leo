@@ -14,14 +14,14 @@
   "files": [
     "lib"
   ],
-  "gitHead": "ae75c01f618bd90bd9bbfcc991c278fab9f709a7",
+  "gitHead": "405a195b5c1b5566bc54a07cbd588af7c0f58401",
   "homepage": "https://github.com/wizeline/lerna-leo/tree/master/packages/learning-package-one#readme",
   "keywords": [
     "test"
   ],
   "license": "MIT",
   "main": "lib/learning-package-one.js",
-  "name": "@wizeline/learning-package-one",
+  "name": "@evolsignal/learning-package-one",
   "private": false,
   "publishConfig": {
     "access": "public"
@@ -35,5 +35,5 @@
     "tsc": "tsc"
   },
   "typings": "lib/learning-package-one.d.ts",
-  "version": "0.3.5"
+  "version": "0.3.6"
 }
