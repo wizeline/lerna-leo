@@ -21,7 +21,7 @@
   ],
   "license": "MIT",
   "main": "lib/learning-package-two.js",
-  "name": "@evolsignal/learning-package-two",
+  "name": "@wizeline/learning-package-two",
   "private": false,
   "publishConfig": {
     "access": "public"
