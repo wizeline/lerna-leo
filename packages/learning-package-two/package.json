@@ -1,5 +1,6 @@
 {
   "name": "@wizeline/learning-package-two",
+  "private": false,
   "version": "0.3.1",
   "description": "two",
   "keywords": [
@@ -31,5 +32,5 @@
     "typescript": "3.5.2"
   },
   "typings": "lib/learning-package-two.d.ts",
-  "gitHead": "db90f06c8a998b286cfb2f7a8313e285d757da04"
+  "gitHead": "4637305c58b49e0e9f2dfd3b1f6b967dded634c4"
 }
