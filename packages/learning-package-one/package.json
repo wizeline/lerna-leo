@@ -1,15 +1,12 @@
 {
-  "name": "@evolsignal/learning-package-one",
-  "private": false,
-  "version": "0.3.4",
-  "description": "learning pkg 1",
-  "keywords": [
-    "test"
-  ],
   "author": "Leo Urzua <d.leonardo.urzua@gmail.com>",
-  "homepage": "https://github.com/wizeline/lerna-leo/tree/master/packages/learning-package-one#readme",
-  "license": "MIT",
-  "main": "lib/learning-package-one.js",
+  "bugs": {
+    "url": "https://github.com/wizeline/lerna-leo/issues"
+  },
+  "description": "learning pkg 1",
+  "devDependencies": {
+    "typescript": "3.5.2"
+  },
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -17,23 +14,26 @@
   "files": [
     "lib"
   ],
+  "gitHead": "ae75c01f618bd90bd9bbfcc991c278fab9f709a7",
+  "homepage": "https://github.com/wizeline/lerna-leo/tree/master/packages/learning-package-one#readme",
+  "keywords": [
+    "test"
+  ],
+  "license": "MIT",
+  "main": "lib/learning-package-one.js",
+  "name": "@evolsignal/learning-package-one",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/wizeline/lerna-leo.git"
   },
   "scripts": {
-    "tsc": "tsc",
-    "test": "echo \"Error: run tests from root\" && exit 2"
-  },
-  "bugs": {
-    "url": "https://github.com/wizeline/lerna-leo/issues"
-  },
-  "devDependencies": {
-    "typescript": "3.5.2"
-  },
-  "publishConfig": {
-    "access": "public"
+    "test": "echo \"Error: run tests from root\" && exit 2",
+    "tsc": "tsc"
   },
   "typings": "lib/learning-package-one.d.ts",
-  "gitHead": "6e9e0150983f41d0b403c5ccadbd8a9a5bf26b96"
+  "version": "0.3.4"
 }
