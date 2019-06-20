@@ -1,5 +1,5 @@
 {
-  "name": "@wizeline/learning-package-one",
+  "name": "@evolsignal/learning-package-one",
   "private": false,
   "version": "0.3.3",
   "description": "learning pkg 1",
@@ -35,5 +35,5 @@
     "access": "public"
   },
   "typings": "lib/learning-package-one.d.ts",
-  "gitHead": "44e580d1f534440df50278ae085ecc196857401f"
+  "gitHead": "6e9e0150983f41d0b403c5ccadbd8a9a5bf26b96"
 }
