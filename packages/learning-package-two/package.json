@@ -32,5 +32,5 @@
     "typescript": "3.5.2"
   },
   "typings": "lib/learning-package-two.d.ts",
-  "gitHead": "4637305c58b49e0e9f2dfd3b1f6b967dded634c4"
+  "gitHead": "44e580d1f534440df50278ae085ecc196857401f"
 }
