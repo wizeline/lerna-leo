@@ -6,10 +6,7 @@
     "husky": "2.4.1",
     "lerna": "^3.15.0",
     "lerna-semantic-release": "9.1.0",
-    "semantic-release": "^15.13.16",
-    "typescript": "3.5.2",
-    "@semantic-release/changelog": "3.0.2",
-    "@semantic-release/git": "7.0.8"
+    "typescript": "3.5.2"
   },
   "config": {
     "commitizen": {
@@ -23,25 +20,13 @@
     "bootstrap": "lerna bootstrap",
     "ci-publish": " semantic-release && lerna run tsc && lerna publish"
   },
-  "release": {
-    "prepare": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ],
-    "verifyConditions": [
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/git"
-    ]
-  },
   "version": "0.2.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/wizeline/lerna-leo.git"
   },
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "description": "[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/) [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)",
   "bugs": {
