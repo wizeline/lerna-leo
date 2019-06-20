@@ -1,3 +1,14 @@
+## [0.2.3](https://github.com/wizeline/lerna-leo/compare/v0.2.2...v0.2.3) (2019-06-20)
+
+
+### Bug Fixes
+
+* **main:** package ([b5a1240](https://github.com/wizeline/lerna-leo/commit/b5a1240))
+* **pkg:** ci ([3ce355b](https://github.com/wizeline/lerna-leo/commit/3ce355b))
+* **pkg:** lala ([62a9bf1](https://github.com/wizeline/lerna-leo/commit/62a9bf1))
+* **pkg:** release ([1f0951b](https://github.com/wizeline/lerna-leo/commit/1f0951b))
+* **yml:** travis ([3585efd](https://github.com/wizeline/lerna-leo/commit/3585efd))
+
 # [0.2.0](https://github.com/wizeline/lerna-leo/compare/v0.1.1...v0.2.0) (2019-06-20)
 
 

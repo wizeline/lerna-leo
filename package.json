@@ -25,7 +25,7 @@
     "bootstrap": "lerna bootstrap",
     "ci-publish": "semantic-release && lerna run tsc && lerna publish"
   },
-  "version": "0.2.0",
+  "version": "0.2.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/wizeline/lerna-leo.git"
