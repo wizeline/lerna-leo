@@ -14,4 +14,4 @@ jobs:
         provider: script
         skip_cleanup: true
         script:
-          - npm run ci-publish
+          - npm run publish
