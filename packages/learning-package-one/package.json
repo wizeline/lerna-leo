@@ -31,8 +31,7 @@
     "url": "git+https://github.com/wizeline/lerna-leo.git"
   },
   "scripts": {
-    "test": "echo test - package-one",
-    "tsc": "tsc"
+    "test": "echo test - package-one"
   },
   "typings": "lib/learning-package-one.d.ts",
   "version": "0.3.8"
