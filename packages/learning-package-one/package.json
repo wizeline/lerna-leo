@@ -34,5 +34,5 @@
     "test": "echo test - package-one"
   },
   "typings": "lib/learning-package-one.d.ts",
-  "version": "0.5.0"
+  "version": "0.5.1-beta.0"
 }
