@@ -1,3 +1,23 @@
+# Change Log
+
+All notable changes to this project will be documented in this file.
+See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
+
+## [0.3.9](https://github.com/wizeline/lerna-leo/compare/v0.3.8...v0.3.9) (2019-07-03)
+
+
+### Bug Fixes
+
+* **a:** a ([2dff05f](https://github.com/wizeline/lerna-leo/commit/2dff05f))
+* **a:** b ([2a45b08](https://github.com/wizeline/lerna-leo/commit/2a45b08))
+* **ci:** print logs ([0e380e1](https://github.com/wizeline/lerna-leo/commit/0e380e1))
+* **console log:** random ([96d9803](https://github.com/wizeline/lerna-leo/commit/96d9803))
+* **log:** a ([1cc9248](https://github.com/wizeline/lerna-leo/commit/1cc9248))
+
+
+
+
+
 ## [0.3.8](https://github.com/wizeline/lerna-leo/compare/v0.3.7...v0.3.8) (2019-06-20)
 
 
