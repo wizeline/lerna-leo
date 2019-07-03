@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.4.0](https://github.com/wizeline/lerna-leo/compare/v0.3.9...v0.4.0) (2019-07-03)
+
+
+### Features
+
+* new feat ([de4d281](https://github.com/wizeline/lerna-leo/commit/de4d281))
+
+
+
+
+
 ## [0.3.9](https://github.com/wizeline/lerna-leo/compare/v0.3.8...v0.3.9) (2019-07-03)
 
 
