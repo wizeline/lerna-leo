@@ -23,7 +23,7 @@
     "postinstall": "lerna bootstrap",
     "bootstrap": "lerna bootstrap",
     "publish:master": "lerna publish --conventional-commits --cd-version=prerelease --yes --independent --npm-tag=unstable --preid=unstable --message 'chore(release): Publish [ci skip]' --exact",
-    "publish:beta": "lerna publish --conventional-commits --cd-version=prerelease --yes --independent --npm-tag=beta --preid=beta --message 'chore(release): Publish [ci skip]' --exact",
+    "publish:beta": "lerna publish --conventional-commits --cd-version=prerelease --yes  --npm-tag=beta --preid=beta --message 'chore(release): Publish [ci skip]' --exact",
     "publish:release": "lerna publish --conventional-commits --yes  --message 'chore(release): Publish [ci skip]'"
   },
   "version": "0.3.8",
