@@ -1,6 +1,6 @@
 export class LearningPackageOne {
     get(id){
-        console.log('random big 2 beta');
+        console.log('random big 2 deature');
         return {}
     }
 }
