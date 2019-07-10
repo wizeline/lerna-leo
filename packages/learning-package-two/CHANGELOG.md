@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0-beta.1](https://github.com/wizeline/lerna-leo/compare/v0.6.0-beta.0...v0.6.0-beta.1) (2019-07-10)
+
+
+### Bug Fixes
+
+* package ([c01983f](https://github.com/wizeline/lerna-leo/commit/c01983f))
+
+
+
+
+
 # [0.6.0-beta.0](https://github.com/wizeline/lerna-leo/compare/v0.5.1-beta.0...v0.6.0-beta.0) (2019-07-09)
 
 
