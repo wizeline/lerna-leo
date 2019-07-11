@@ -5,6 +5,7 @@ node_js:
 
 before_deploy: 
   - git reset --hard origin/master
+  - git checkout master
 jobs:
   include:
     # Define the release stage that runs semantic-release
