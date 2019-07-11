@@ -1,5 +1,5 @@
 export class LearningPackageTwo {
     get(id){
-        return {a: 10}
+        return {a: 11}
     }
 }
