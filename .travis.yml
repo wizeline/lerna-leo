@@ -14,5 +14,6 @@ jobs:
         provider: script
         skip_cleanup: true
         script:
-          - git checkout $TRAVIS_BRANCH
+          - git fetch
+          - git reset --hard origin/master
           - npm run publish
