@@ -5,7 +5,7 @@ node_js:
 
 before_deploy:
   - git checkout master
-  - git config user.name
+  - git remote set-url origin https://${GH_TOKEN}@github.com/wizeline/lerna-leo
 jobs:
   include:
     # Define the release stage that runs semantic-release
