@@ -3,6 +3,32 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.8.0](https://github.com/wizeline/lerna-leo/compare/v0.7.0...v0.8.0) (2019-07-11)
+
+
+### Features
+
+* new feat10 ([b8be559](https://github.com/wizeline/lerna-leo/commit/b8be559))
+* new feat11 ([3328f1d](https://github.com/wizeline/lerna-leo/commit/3328f1d))
+* new feat12 ([f76c54a](https://github.com/wizeline/lerna-leo/commit/f76c54a))
+* new feat13 ([5ff1b99](https://github.com/wizeline/lerna-leo/commit/5ff1b99))
+* new feat14 ([715f15e](https://github.com/wizeline/lerna-leo/commit/715f15e))
+* new feat15 ([f8af0f2](https://github.com/wizeline/lerna-leo/commit/f8af0f2))
+* new feat16 ([991f704](https://github.com/wizeline/lerna-leo/commit/991f704))
+* new feat17 ([a87e75b](https://github.com/wizeline/lerna-leo/commit/a87e75b))
+* new feat18 ([cab702b](https://github.com/wizeline/lerna-leo/commit/cab702b))
+* new feat19 ([badda89](https://github.com/wizeline/lerna-leo/commit/badda89))
+* new feat20 ([9abcd00](https://github.com/wizeline/lerna-leo/commit/9abcd00))
+* new feat21 ([3c112c8](https://github.com/wizeline/lerna-leo/commit/3c112c8))
+* new feat22 ([cf0c60f](https://github.com/wizeline/lerna-leo/commit/cf0c60f))
+* new feat23 ([ff2cbe4](https://github.com/wizeline/lerna-leo/commit/ff2cbe4))
+* new feat5 ([ab2c90a](https://github.com/wizeline/lerna-leo/commit/ab2c90a))
+* new something ([8f39ce8](https://github.com/wizeline/lerna-leo/commit/8f39ce8))
+
+
+
+
+
 # [0.7.0](https://github.com/wizeline/lerna-leo/compare/v0.6.0-beta.1...v0.7.0) (2019-07-11)
 
 
