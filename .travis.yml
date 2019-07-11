@@ -6,7 +6,7 @@ node_js:
 before_deploy:
   - git remote remove origin
   - git remote add origin https://${GH_TOKEN}@github.com/${GH_USERNAME}/wizeline/lerna-leo.git
-  - git reset --hard origin/master
+  - git reset --hard master
   - git checkout master
 jobs:
   include:
