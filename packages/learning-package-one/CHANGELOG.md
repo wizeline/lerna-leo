@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.12.2](https://github.com/wizeline/lerna-leo/compare/v0.12.1...v0.12.2) (2019-07-11)
+
+
+### Bug Fixes
+
+* new feat35 ([e708ae0](https://github.com/wizeline/lerna-leo/commit/e708ae0))
+
+
+
+
+
 # [0.12.0](https://github.com/wizeline/lerna-leo/compare/v0.11.0...v0.12.0) (2019-07-11)
 
 **Note:** Version bump only for package @evolsignal/learning-package-one
