@@ -5,6 +5,7 @@ node_js:
 
 before_deploy:
   - git checkout master
+  - git config user.name
 jobs:
   include:
     # Define the release stage that runs semantic-release
