@@ -1,6 +1,6 @@
 export class LearningPackageOne {
     get(id){
-        console.log('random big 7 feature');
+        console.log('random big 10 feature');
         return {}
     }
 }
