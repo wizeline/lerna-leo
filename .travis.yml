@@ -1,11 +1,10 @@
-git:
-  depth: false
-
 language: node_js
 
 node_js:
   - 10
 
+before_deploy: 
+  - git reset --hard origin/master
 jobs:
   include:
     # Define the release stage that runs semantic-release
@@ -17,5 +16,4 @@ jobs:
         provider: script
         skip_cleanup: true
         script:
-          - git reset --hard origin/master
           - npm run publish
