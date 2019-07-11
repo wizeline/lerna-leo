@@ -6,6 +6,8 @@ node_js:
 before_deploy:
   - git checkout master
   - git remote set-url origin https://${GH_TOKEN}@github.com/wizeline/lerna-leo
+  - echo $NPM_CONFIG_EMAIL
+  - echo $NPM_TOKEN
 jobs:
   include:
     # Define the release stage that runs semantic-release
