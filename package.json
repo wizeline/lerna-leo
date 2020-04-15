@@ -19,6 +19,7 @@
   },
   "scripts": {
     "test": "echo test root",
+    "link": "lerna exec npm link",
     "commit": "npx git-cz",
     "postinstall": "lerna bootstrap",
     "bootstrap": "lerna bootstrap",
