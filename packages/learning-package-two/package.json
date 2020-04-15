@@ -35,5 +35,5 @@
     "tsc": "tsc"
   },
   "typings": "lib/learning-package-two.d.ts",
-  "version": "0.12.3"
+  "version": "0.13.0"
 }
