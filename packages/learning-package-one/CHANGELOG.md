@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.17.0](https://github.com/wizeline/lerna-leo/compare/v0.16.1...v0.17.0) (2020-04-16)
+
+
+### Features
+
+* **readme:** update readme in package one ([4c79202](https://github.com/wizeline/lerna-leo/commit/4c79202))
+
+
+
+
+
 # [0.16.0](https://github.com/wizeline/lerna-leo/compare/v0.15.1...v0.16.0) (2020-04-16)
 
 **Note:** Version bump only for package @evolsignal/learning-package-one
