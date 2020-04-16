@@ -7,5 +7,5 @@
 ```
 const learningPackageTwo = require('learning-package-two');
 
-// TODO: DEMONSTRATE API M/0.16.1
+// TODO: DEMONSTRATE API M/0.18.0
 ```
