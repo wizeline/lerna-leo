@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.15.0](https://github.com/wizeline/lerna-leo/compare/v0.14.1...v0.15.0) (2020-04-16)
+
+
+### Features
+
+* **learning-package-two.ts:** second commit ([34ac487](https://github.com/wizeline/lerna-leo/commit/34ac487))
+
+
+
+
+
 ## [0.14.1](https://github.com/wizeline/lerna-leo/compare/v0.14.0...v0.14.1) (2020-04-16)
 
 
