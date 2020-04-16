@@ -7,5 +7,5 @@
 ```
 const learningPackageOne = require('learning-package-one');
 
-// TODO: DEMONSTRATE API
+// TODO: DEMONSTRATE API M/0.17.1
 ```
