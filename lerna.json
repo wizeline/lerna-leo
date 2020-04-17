@@ -1,7 +1,11 @@
 {
-  "npmClient": "npm",
+  "command": {
+    "publish": {
+      "conventionalCommits": true
+    }
+  },
   "packages": [
     "packages/*"
   ],
-  "version": "0.23.4"
+  "version": "0.5.1"
 }
