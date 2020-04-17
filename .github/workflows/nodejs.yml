@@ -5,9 +5,11 @@ name: Node.js CI
 
 on:
   push:                             # Detect push event
-    branches-ignore: [ master ]     # Ignore push in master branch 
+    branches-ignore: 
+        - 'master'                  # Ignore push in master branch 
   pull_request:                     # Detect pull requests events
-    branches: [ master ]            # Over branch master
+    branches:
+        - 'master'                  # PRs over branch master
 
 jobs:
   build:
