@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.23.0](https://github.com/wizeline/lerna-leo/compare/v0.22.1...v0.23.0) (2020-04-17)
+
+**Note:** Version bump only for package @evolsignal/learning-package-one
+
+
+
+
+
 # [0.22.0](https://github.com/wizeline/lerna-leo/compare/v0.21.1...v0.22.0) (2020-04-17)
 
 
