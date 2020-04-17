@@ -1,15 +1,16 @@
 # This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
+---
 name: Node.js CI
 
 on:
   push:                             # Detect push event
     branches-ignore: 
-        - 'master'                  # Ignore push in master branch 
+      - 'master'                  # Ignore push in master branch 
   pull_request:                     # Detect pull requests events
     branches:
-        - 'master'                  # PRs over branch master
+      - 'master'                  # PRs over branch master
 
 jobs:
   build:
@@ -22,9 +23,8 @@ jobs:
         os: [ubuntu-16.04, ubuntu-18.04]
 
     steps:
-    - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node }}
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v23.4
       with:
         node-version: ${{ matrix.node }}
     - run: npm ci
@@ -32,3 +32,4 @@ jobs:
     - run: npm test
       env:
         CI: true
+...
