@@ -7,5 +7,5 @@
 ```
 const learningPackageTwo = require('learning-package-two');
 
-// TODO: DEMONSTRATE New
+// TODO: DEMONSTRATE M 0.23.0
 ```
