@@ -14,7 +14,7 @@ jobs:
 
     runs-on: ${{ matrix.os }}          # Enviroment of deploy to test
     
-    strategy:                       # Run job with different versions of Node.js and Ubuntu
+    strategy:                          # Run job with different versions of Node.js and Ubuntu
       matrix:                   
         node: [10.x, 12.x]
         os: [ubuntu-16.04, ubuntu-18.04]
