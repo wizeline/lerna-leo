@@ -3,6 +3,36 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.22.0](https://github.com/wizeline/lerna-leo/compare/v0.21.1...v0.22.0) (2020-04-17)
+
+
+### Bug Fixes
+
+* **learning-package-two.ts:** second commit ([c33f052](https://github.com/wizeline/lerna-leo/commit/c33f052))
+* **readme:** all changes ([d376a78](https://github.com/wizeline/lerna-leo/commit/d376a78))
+* **readme:** change all readme ([c22942d](https://github.com/wizeline/lerna-leo/commit/c22942d))
+* **readme:** change description of readmes ([c74147b](https://github.com/wizeline/lerna-leo/commit/c74147b))
+* **readme:** new update to README.md in two ([0c12be6](https://github.com/wizeline/lerna-leo/commit/0c12be6))
+* **readme:** readme ([49d1471](https://github.com/wizeline/lerna-leo/commit/49d1471))
+* **readme:** readme ([3278c33](https://github.com/wizeline/lerna-leo/commit/3278c33))
+* **readme:** readme ([8777755](https://github.com/wizeline/lerna-leo/commit/8777755))
+* **readme:** readme only package two ([98cc6f9](https://github.com/wizeline/lerna-leo/commit/98cc6f9))
+* **readme:** update all readmes ([cf55e06](https://github.com/wizeline/lerna-leo/commit/cf55e06))
+* first commit ([a1ba1d1](https://github.com/wizeline/lerna-leo/commit/a1ba1d1))
+
+
+### Features
+
+* **learning-package-two.ts:** second commit ([bce2a29](https://github.com/wizeline/lerna-leo/commit/bce2a29))
+* **readme:** change to readme in two ([da6d461](https://github.com/wizeline/lerna-leo/commit/da6d461))
+* **readme:** new commit ([45e1efd](https://github.com/wizeline/lerna-leo/commit/45e1efd))
+* **readme:** readme ([2f368de](https://github.com/wizeline/lerna-leo/commit/2f368de))
+* **version:** modified lerna.json to only one package ([02ff63f](https://github.com/wizeline/lerna-leo/commit/02ff63f))
+
+
+
+
+
 
 ## [0.21.1](https://github.com/wizeline/lerna-leo/compare/v0.21.0...v0.21.1) (2020-04-16)
 

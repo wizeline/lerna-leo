@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.22.0](https://github.com/wizeline/lerna-leo/compare/v0.21.1...v0.22.0) (2020-04-17)
+
+
+### Bug Fixes
+
+* **readme:** all changes ([d376a78](https://github.com/wizeline/lerna-leo/commit/d376a78))
+* **readme:** change all readme ([c22942d](https://github.com/wizeline/lerna-leo/commit/c22942d))
+* **readme:** change description of readmes ([c74147b](https://github.com/wizeline/lerna-leo/commit/c74147b))
+* **readme:** change readme and lerna.json ([c5ce1ec](https://github.com/wizeline/lerna-leo/commit/c5ce1ec))
+* **readme:** update all readmes ([cf55e06](https://github.com/wizeline/lerna-leo/commit/cf55e06))
+* first commit ([cf9a879](https://github.com/wizeline/lerna-leo/commit/cf9a879))
+
+
+### Features
+
+* **learning-package-two.ts:** second commit ([bce2a29](https://github.com/wizeline/lerna-leo/commit/bce2a29))
+* **readme:** update readme and version ([4abc73d](https://github.com/wizeline/lerna-leo/commit/4abc73d))
+* **readme:** update readme in package one ([ba56517](https://github.com/wizeline/lerna-leo/commit/ba56517))
+
+
+
+
+
 # [0.21.0](https://github.com/wizeline/lerna-leo/compare/v0.20.3...v0.21.0) (2020-04-16)
 
 
