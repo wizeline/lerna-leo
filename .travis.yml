@@ -11,6 +11,10 @@ before_deploy:
   - npm whoami
   - git config --global user.email $GITHUB_EMAIL
   - git config --global user.name $GITHUB_USER
+before_script:
+  - npm run link
+install:
+  - echo "mock sucess response"
 jobs:
   include:
     # Define the release stage that runs semantic-release
@@ -19,8 +23,6 @@ jobs:
       # Advanced: optionally overwrite your default `script` step to skip the tests
       # script: skip
       deploy:
-        on:
-          branch: master
         provider: script
         skip_cleanup: true
         script:

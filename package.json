@@ -18,12 +18,10 @@
     }
   },
   "scripts": {
-    "test": "echo test root",
     "link": "lerna exec npm link",
-    "commit": "npx git-cz",
-    "postinstall": "lerna bootstrap",
-    "bootstrap": "lerna bootstrap",
-    "publish": "lerna publish --conventional-commits --yes --message 'chore(release): Publish version [ci skip]'"
+    "install": "lerna bootstrap",
+    "publish": "lerna run build && lerna publish --conventional-commits --yes  --message 'chore(release): Publish'",
+    "test": "lerna run test"
   },
   "version": "0.3.8",
   "repository": {
