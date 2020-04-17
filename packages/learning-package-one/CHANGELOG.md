@@ -10,10 +10,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 * **readme:** all changes ([c96ee71](https://github.com/wizeline/lerna-leo/commit/c96ee71))
 
-
-
-
-
 ## [0.20.2](https://github.com/wizeline/lerna-leo/compare/v0.20.1...v0.20.2) (2020-04-16)
 
 
