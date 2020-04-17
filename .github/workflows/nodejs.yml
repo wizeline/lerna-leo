@@ -35,15 +35,11 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-build-${{ env.cache-name }}-
           ${{ runner.os }}-build-
-          ${{ runner.os }}-
-
-    - name: Install Dependencies
-      run: npm install
-    
-    #- name: Use Node.js ${{ matrix.node }}
-    #  uses: actions/setup-node@v1
-    #  with:
-    #    node-version: ${{ matrix.node }}
+          ${{ runner.os }}-    
+    - name: Use Node.js ${{ matrix.node }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node }}
     - name: CI process
       run: npm ci
     - name: Building script
