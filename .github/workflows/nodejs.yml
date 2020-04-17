@@ -15,29 +15,20 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest          # Enviroment of deploy to test
+    runs-on: ${{ matrix.os }}          # Enviroment of deploy to test
     
+    strategy:                          # Run job with different versions of Node.js and Ubuntu
+      matrix:                   
+        node: [10.x, 12.x]
+        os: [ubuntu-18.04, ubuntu-latest]
+
     steps:
     - name: Checks-out repository
       uses: actions/checkout@v2
-    #- name: Get npm cache directory
-    #  id: npm-cache
-    #  run: echo "::set-output name=dir::$(npm config get cache)"    # Get directory of npm cache
-    - name: Cache node modules
-      id: cache-node-modules
-      uses: actions/cache@v1
+    - name: Use Node.js ${{ matrix.node }}
+      uses: actions/setup-node@v1
       with:
-        path: |
-              node_modules
-              */*/node_modules      
-  # npm cache files are stored in `~/.npm` on Linux/macOS
-        key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
-    - name: Validate cache 1
-      if: steps.cache-node-modules.outputs.cache-hit == 'true'
-      run: echo "Detectó caché"
-    - name: Validate cache 2
-      if: steps.cache-node-modules.outputs.cache-hit != 'true'
-      run: echo "Detectó caché"
+        node-version: ${{ matrix.node }}
     - name: CI process
       run: npm ci
     - name: Building script
