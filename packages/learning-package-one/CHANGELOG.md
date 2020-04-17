@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.23.3](https://github.com/wizeline/lerna-leo/compare/v0.23.2...v0.23.3) (2020-04-17)
+
+
+### Bug Fixes
+
+* **nodejs.yml:** change format to file ([6e1b29f](https://github.com/wizeline/lerna-leo/commit/6e1b29f))
+
+
+
+
+
 ## [0.23.2](https://github.com/wizeline/lerna-leo/compare/v0.23.1...v0.23.2) (2020-04-17)
 
 
