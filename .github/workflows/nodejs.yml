@@ -24,7 +24,7 @@ jobs:
 
     steps:
     - name: Use Node.js ${{ matrix.node }}
-      uses: actions/setup-node@v0.23.3
+      uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node }}
     - run: npm ci
