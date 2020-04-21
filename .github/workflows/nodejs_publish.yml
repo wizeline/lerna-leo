@@ -25,8 +25,11 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
           registry-url: 'https://registry.npmjs.org'
+      - name: link
         run: cat ~/.npmrc
+        run: npm run link
       - name: CI process
+        run: for d in packages/access-decision-manager-express/examples/* ; do (cd "$d" && npm i); done 
         run: npm ci
       - name: Build process
         run: npm run publish
