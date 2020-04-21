@@ -7,5 +7,5 @@
 ```
 const learningPackageOne = require('learning-package-one');
 
-// TODO: DEMONSTRATE GH publish
+// TODO: DEMONSTRATE GH publish 12
 ```
