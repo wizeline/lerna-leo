@@ -5,27 +5,33 @@
 name: Node.js CI
 
 on:
-  push:                             # Detect push event
-    branches-ignore: 
-      - 'master'                  # Ignore push in master branch 
-  pull_request:                     # Detect pull requests events
+  # Detect push event
+  # push:                             
+  #  branches-ignore: 
+  #    - 'master'
+  # Detect pull requests events                
+  pull_request:                    
     branches:
-      - 'master'                  # PRs over branch master
+      - 'master'                 
 
 jobs:
   build:
-
-    runs-on: ${{ matrix.os }}          # Enviroment of deploy to test
+    # Enviroments of deploy to test
+    runs-on: ${{ matrix.os }}          
     
-    strategy:                          # Run job with different versions of Node.js and Ubuntu
+    strategy:
+      # Matrix with different versions of Node.js and Ubuntu                          
       matrix:                   
-        node: [10.x, 12.x]
-        os: [ubuntu-18.04, ubuntu-latest]
+        #node: [10.x, 12.x]
+        node: [12.x]
+        #os: [ubuntu-18.04, ubuntu-latest]
+        os: [ubuntu-latest]
 
+    # Steps to execute
     steps:
     - name: Checks-out repository
       uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node }}
+    - name: Use NodeJS ${{ matrix.node }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node }}
