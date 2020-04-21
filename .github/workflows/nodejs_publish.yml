@@ -1,40 +1,22 @@
 ---
-name: Node.js Publish
+name: Publish
 
 on:
   push:
     branches:
       - master
-  release:
-    types: [created]
 
 jobs:
   build:
-    runs-on: ${{ matrix.os }}
-    
-    strategy:                          
-      matrix:              
-        node: [12.x]
-        os: [ubuntu-latest]
-    
+    runs-on: ubuntu-latest
     steps:
-      - name: Checks-out repository
-        uses: actions/checkout@v2
-      - name: Use NodeJS ${{ matrix.node }}
-        uses: actions/setup-node@v1
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node }}
-          registry-url: 'https://registry.npmjs.org'
-      - run: cat ~/.npmrc
-      - name: link
-        run: npm run link
-      - run: for d in packages/access-decision-manager-express/examples/* ; do (cd "$d" && npm i); done 
-      - name: CI process
-        run: npm ci
-      - name: Build process
-        run: npm run publish
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - run: npm ci
+      - run: npm run publish --access public
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
 ...
