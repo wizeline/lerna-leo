@@ -2,9 +2,8 @@
 name: Node.js Publish
 
 on:
-  push:
-    branches:
-      - master
+  release:
+    types: [created]
 
 jobs:
   build:
@@ -22,31 +21,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
-      - name: CI process
-        run: npm ci
-      - name: Test process
-        run: npm test
-
-  publish-npm:
-    needs: build
-    runs-on: ${{ matrix.os }}
-    
-    strategy:
-      matrix:      
-        node: [12.x]
-        os: [ubuntu-latest]
-    
-    steps:
-      - name: Checks-out repository
-        uses: actions/checkout@v2
-      - name: Use NodeJS ${{ matrix.node }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node }}
           registry-url: 'https://registry.npmjs.org'
       - name: CI process
         run: npm ci
-      - name: Publish process
+      - name: Build process
         run: npm run publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
