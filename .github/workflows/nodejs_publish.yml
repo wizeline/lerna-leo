@@ -1,0 +1,53 @@
+---
+name: Node.js Publish
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    
+    strategy:                          
+      matrix:              
+        node: [12.x]
+        os: [ubuntu-latest]
+    
+    steps:
+      - name: Checks-out repository
+        uses: actions/checkout@v2
+      - name: Use NodeJS ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - name: CI process
+        run: npm ci
+      - name: Test process
+        run: npm test
+
+  publish-npm:
+    needs: build
+    runs-on: ${{ matrix.os }}
+    
+    strategy:                          
+      matrix:              
+        node: [12.x]
+        os: [ubuntu-latest]
+    
+    steps:
+      - name: Checks-out repository
+        uses: actions/checkout@v2
+      - name: Use NodeJS ${{ matrix.node }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+          registry-url: https://registry.npmjs.org/
+      - name: CI process
+        run: npm ci
+      - name: Test process
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+...
