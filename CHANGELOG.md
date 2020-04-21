@@ -3,6 +3,25 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.24.0](https://github.com/wizeline/lerna-leo/compare/v0.23.4...v0.24.0) (2020-04-21)
+
+
+### Features
+
+* **./github/workflows/nodejs_publish.yml:** create Publish YAML ([7e61e28](https://github.com/wizeline/lerna-leo/commit/7e61e28))
+* **./github/workflows/nodejs_publish.yml:** create YAML file to publish in NPM ([de33d7a](https://github.com/wizeline/lerna-leo/commit/de33d7a))
+* **nodejs_publish.yml:** new publish ([1eb6405](https://github.com/wizeline/lerna-leo/commit/1eb6405))
+* **nodejs_publish.yml:** new test all workload ([089c65e](https://github.com/wizeline/lerna-leo/commit/089c65e))
+* **nodejs_publish.yml:** test all workload ([a6c6c6c](https://github.com/wizeline/lerna-leo/commit/a6c6c6c))
+* **nodejs_publish.yml:** test all workload ([cd2825c](https://github.com/wizeline/lerna-leo/commit/cd2825c))
+* **README:** first test deploy to npm repository ([b140413](https://github.com/wizeline/lerna-leo/commit/b140413))
+* lerna ([7addd30](https://github.com/wizeline/lerna-leo/commit/7addd30))
+* migrate ([181a2cb](https://github.com/wizeline/lerna-leo/commit/181a2cb))
+
+
+
+
+
 ## [0.23.4](https://github.com/wizeline/lerna-leo/compare/v0.23.3...v0.23.4) (2020-04-17)
 
 
