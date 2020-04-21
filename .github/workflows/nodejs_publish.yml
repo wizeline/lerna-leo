@@ -32,7 +32,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     
     strategy:
-      matrix:              
+      matrix:      
         node: [12.x]
         os: [ubuntu-latest]
     
@@ -46,8 +46,8 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - name: CI process
         run: npm ci
-      - name: Test process
-        run: npm publish
+      - name: Publish process
+        run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 ...
