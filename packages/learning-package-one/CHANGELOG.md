@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.24.0](https://github.com/wizeline/lerna-leo/compare/v0.23.4...v0.24.0) (2020-04-21)
+
+
+### Features
+
+* **README:** first test deploy to npm repository ([b140413](https://github.com/wizeline/lerna-leo/commit/b140413))
+* migrate ([181a2cb](https://github.com/wizeline/lerna-leo/commit/181a2cb))
+
+
+
+
+
 ## [0.23.4](https://github.com/wizeline/lerna-leo/compare/v0.23.3...v0.23.4) (2020-04-17)
 
 
