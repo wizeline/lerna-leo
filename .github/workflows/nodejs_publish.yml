@@ -32,7 +32,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     
     strategy:
-      matrix:          
+      matrix:        
         node: [12.x]
         os: [ubuntu-latest]
     
