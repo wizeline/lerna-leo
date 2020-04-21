@@ -25,6 +25,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
           registry-url: 'https://registry.npmjs.org'
+        run: cat ~/.npmrc
       - name: CI process
         run: npm ci
       - name: Build process
