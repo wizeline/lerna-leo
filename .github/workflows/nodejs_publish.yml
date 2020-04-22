@@ -1,5 +1,4 @@
----
-name: Publish
+name: CD
 
 on:
   push:
@@ -10,13 +9,36 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      - run: npm run publish --access public
+      - name: checkout
+        uses: actions/checkout@v1
+
+      - name: Configure CI Git User
+        run: |
+          git config --global user.name 'MartinRoman94'
+          git config --global user.email 'martin.arcos@wizeline.com'
+          git remote set-url origin https://$GITHUB_ACTOR:$GH_TOKEN@github.com/wizeline/lerna-leo
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-...
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+      - name: Checkout and pull branch
+        run: git checkout "${GITHUB_REF:11}" && git pull
+
+      - name: Install Packages
+        run: |
+          for d in packages/access-decision-manager-express/examples/* ; do (cd "$d" && npm i); done
+          npm ci
+
+      - name: Authenticate with Registry
+        run: |
+          echo "registry=http://registry.npmjs.org/" > .npmrc
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
+          npm whoami
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+      - name: Publish package
+        run: npm run publish
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
