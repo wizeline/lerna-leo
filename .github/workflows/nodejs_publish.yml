@@ -19,7 +19,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node_version: 12
-          registry-url: 'https://npm.pkg.github.com'
       - name: Git Identity
         run: |
           git config --global user.name 'MartinRoman94'
@@ -34,7 +33,8 @@ jobs:
           npm whoami
         env:
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-
+      - name: Checkout and pull branch
+        run: git checkout master
       - name: Install
         run: npm ci
       # Define ${CURRENT_VERSION}
