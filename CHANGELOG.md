@@ -3,6 +3,27 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.26.1](https://github.com/wizeline/lerna-leo/compare/v0.26.0...v0.26.1) (2020-04-22)
+
+
+### Features
+
+* **again:** again ([eed0205](https://github.com/wizeline/lerna-leo/commit/eed0205))
+* **checkout:** checkout ([af717c8](https://github.com/wizeline/lerna-leo/commit/af717c8))
+* **new:** new ([9695097](https://github.com/wizeline/lerna-leo/commit/9695097))
+* **nodejs_publish.yml:** new test ([2ddec2a](https://github.com/wizeline/lerna-leo/commit/2ddec2a))
+* **readme:** readme ([086683d](https://github.com/wizeline/lerna-leo/commit/086683d))
+* **readme:** readme ([c79284f](https://github.com/wizeline/lerna-leo/commit/c79284f))
+* **test:** new test ([c62c6d6](https://github.com/wizeline/lerna-leo/commit/c62c6d6))
+* **test:** test ([55d868c](https://github.com/wizeline/lerna-leo/commit/55d868c))
+* **test:** testing ([18c2f9a](https://github.com/wizeline/lerna-leo/commit/18c2f9a))
+* **testing:** test ([2079bbf](https://github.com/wizeline/lerna-leo/commit/2079bbf))
+* **update:** update ([10a517d](https://github.com/wizeline/lerna-leo/commit/10a517d))
+
+
+
+
+
 # [0.26.0](https://github.com/wizeline/lerna-leo/compare/v0.25.0...v0.26.0) (2020-04-21)
 
 
