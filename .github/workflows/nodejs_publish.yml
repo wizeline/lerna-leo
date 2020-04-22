@@ -6,8 +6,6 @@ on:
       - master
     types: [closed]
 
-env:
-  CI: true
 jobs:
   publish:
     name: Publish
@@ -15,10 +13,13 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          persist-credentials: false
       - name: Setup Node ${{ matrix.node_version }}
         uses: actions/setup-node@v1
         with:
           node_version: 12
+          persist-credentials: false
       - name: Git Identity
         run: |
           git config --global user.name 'MartinRoman94'
@@ -80,6 +81,9 @@ jobs:
             ${{ github.event.pull_request.body }}
           draft: false
           prerelease: false
+      - name : Link
+        run: |
+          npm run link
       - name: Publish
         if: steps.tag_check.outputs.exists_tag == 'false'
         run: |
