@@ -3,6 +3,29 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.29.0](https://github.com/wizeline/lerna-leo/compare/v0.27.0...v0.29.0) (2020-04-22)
+
+
+### Bug Fixes
+
+* **readme:** readme again ([e12575d](https://github.com/wizeline/lerna-leo/commit/e12575d))
+* **readme:** readme again ([c2aec08](https://github.com/wizeline/lerna-leo/commit/c2aec08))
+* **readme:** readme again ([546558e](https://github.com/wizeline/lerna-leo/commit/546558e))
+* **readme:** readme change ([80c4507](https://github.com/wizeline/lerna-leo/commit/80c4507))
+* **readme:** readme new ([4bdc393](https://github.com/wizeline/lerna-leo/commit/4bdc393))
+
+
+### Features
+
+* **publish:** update crdentials ([d1018b6](https://github.com/wizeline/lerna-leo/commit/d1018b6))
+* **readme:** publish file ([9783363](https://github.com/wizeline/lerna-leo/commit/9783363))
+* **readme:** readme again ([8f5109a](https://github.com/wizeline/lerna-leo/commit/8f5109a))
+* **readme:** readme changes ([c205dfa](https://github.com/wizeline/lerna-leo/commit/c205dfa))
+
+
+
+
+
 # [0.28.0](https://github.com/wizeline/lerna-leo/compare/v0.27.0...v0.28.0) (2020-04-22)
 
 
