@@ -3,6 +3,39 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.27.0](https://github.com/wizeline/lerna-leo/compare/v0.26.0...v0.27.0) (2020-04-22)
+
+
+### Bug Fixes
+
+* **next:** next ([fe68df8](https://github.com/wizeline/lerna-leo/commit/fe68df8))
+
+
+### Features
+
+* **again:** again ([eed0205](https://github.com/wizeline/lerna-leo/commit/eed0205))
+* **change:** change ([51cbe20](https://github.com/wizeline/lerna-leo/commit/51cbe20))
+* **checkout:** checkout ([af717c8](https://github.com/wizeline/lerna-leo/commit/af717c8))
+* **new:** new ([9695097](https://github.com/wizeline/lerna-leo/commit/9695097))
+* **nodejs_publish:** change ([3ac52de](https://github.com/wizeline/lerna-leo/commit/3ac52de))
+* **nodejs_publish.yml:** new test ([2ddec2a](https://github.com/wizeline/lerna-leo/commit/2ddec2a))
+* **publish:** pusblish CD ([126a7e8](https://github.com/wizeline/lerna-leo/commit/126a7e8))
+* **readme:** new change to readme ([51ddcbe](https://github.com/wizeline/lerna-leo/commit/51ddcbe))
+* **readme:** readme ([6115005](https://github.com/wizeline/lerna-leo/commit/6115005))
+* **readme:** readme again ([4d3781e](https://github.com/wizeline/lerna-leo/commit/4d3781e))
+* change file ([c781fc4](https://github.com/wizeline/lerna-leo/commit/c781fc4))
+* **readme:** readme ([086683d](https://github.com/wizeline/lerna-leo/commit/086683d))
+* **readme:** readme ([c79284f](https://github.com/wizeline/lerna-leo/commit/c79284f))
+* **test:** new test ([c62c6d6](https://github.com/wizeline/lerna-leo/commit/c62c6d6))
+* **test:** test ([55d868c](https://github.com/wizeline/lerna-leo/commit/55d868c))
+* **test:** testing ([18c2f9a](https://github.com/wizeline/lerna-leo/commit/18c2f9a))
+* **testing:** test ([2079bbf](https://github.com/wizeline/lerna-leo/commit/2079bbf))
+* **update:** update ([10a517d](https://github.com/wizeline/lerna-leo/commit/10a517d))
+
+
+
+
+
 # [0.26.0](https://github.com/wizeline/lerna-leo/compare/v0.25.0...v0.26.0) (2020-04-21)
 
 
