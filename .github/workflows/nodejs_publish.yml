@@ -12,7 +12,7 @@ jobs:
 
       - name: Checks-out repository
         uses: actions/checkout@v2
-        
+
       - name: checkout
         uses: actions/checkout@v1
 
@@ -29,6 +29,8 @@ jobs:
 
       - name: Install Packages
         run: |
+          pwd
+          ls -la
           for d in packages/access-decision-manager-express/examples/* ; do (cd "$d" && npm i); done
           npm ci
 
