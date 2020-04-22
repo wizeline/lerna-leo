@@ -36,9 +36,9 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
       
-      #- name: Install Packages
-      #  run: |
-      #    npm ci
+      - name: Install Packages
+        run: |
+          npm ci
 
       - name: Publish package
         run: npm run publish
