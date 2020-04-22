@@ -21,12 +21,12 @@ jobs:
         run: |
           git config --global user.name 'MartinRoman94'
           git config --global user.email 'martin.arcos@wizeline.com'
-          git remote set-url origin https://${GH_TOKEN}@github.com/wizeline/lerna-leo1
+          git remote set-url origin https://$GH_USER:$GH_TOKEN@github.com/wizeline/lerna-leo
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GH_USER: ${{ secrets.GH_USER }}
 
-      - name: Checkout to master
+      - name: Checkout and pull branch
         run: git checkout master
 
       - name: Authenticate with Registry
