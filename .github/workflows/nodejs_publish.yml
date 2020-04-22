@@ -29,7 +29,6 @@ jobs:
 
       - name: Install Packages
         run: |
-          for d in packages/* ; do (cd "$d" && npm i); done
           npm ci
 
       - name: Authenticate with Registry
