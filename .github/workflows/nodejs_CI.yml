@@ -4,10 +4,11 @@ name: Node.js CI
 on:               
   pull_request:                    
     branches:
-      - 'master'                 
+      - master                
 
 jobs:
   build:
+    name: Continuos integration
     runs-on: ${{ matrix.os }}          
     
     strategy:                          
@@ -18,11 +19,11 @@ jobs:
     steps:
     - name: Checks-out repository
       uses: actions/checkout@v2
-    - name: Use NodeJS ${{ matrix.node }}
+    - name: Setup Node ${{ matrix.node }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node }}
-    - name: CI process
+    - name: Install dependencies
       run: npm ci
     - name: Building script
       run: npm run build --if-present

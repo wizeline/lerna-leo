@@ -1,6 +1,7 @@
-name: Publish
+---
+name: Node.js Publish
+
 on:
-  # When Release Pull Request is merged
   pull_request:
     branches:
       - master
@@ -9,71 +10,46 @@ on:
 jobs:
   publish:
     name: Publish
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}          
+    
+    strategy:                          
+      matrix:
+        node: [12.x]
+        os: [ubuntu-latest]
+
     steps:
-      - name: Checkout
+      - name: Checks-out repository
         uses: actions/checkout@v2
         with:
           persist-credentials: false
-      - name: Setup Node ${{ matrix.node_version }}
+      - name: Setup Node ${{ matrix.node }}
         uses: actions/setup-node@v1
         with:
-          node_version: 12
+          node_version: ${{ matrix.node }}
           persist-credentials: false
-      - name: Git Identity
+      - name: Git identity
         run: |
           git config --global user.name 'MartinRoman94'
           git config --global user.email 'martin.arcos@wizeline.com'
           git remote set-url origin https://MartinRoman94:${GITHUB_TOKEN}@github.com/$GITHUB_REPOSITORY
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-      - name: Authenticate with Registry
+      - name: Authenticate in registry
         run: |
           echo "registry=http://registry.npmjs.org/" > .npmrc
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
           npm whoami
         env:
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-      - name: Checkout and pull branch
+      - name: Checkout to master
         run: git checkout master
-      - name: Install
+      - name: Install dependencies
         run: npm ci
-      # Define ${CURRENT_VERSION}
-      - name: Set Current Version
-        shell: bash -ex {0}
-        run: |
-          CURRENT_VERSION=$(node -p 'require("./lerna.json").version')
-          echo "::set-env name=CURRENT_VERSION::${CURRENT_VERSION}"
-      - name : Link
-        run: |
-          npm run link
+      - name : Link packages
+        run: npm run link
       - name: Publish
-        run: |
-          npm run publish
+        run: npm run publish
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-      - name: Create Release
-        id: create_release
-        if: github.event.pull_request.merged == true
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
-        with:
-          tag_name: v${{ env.CURRENT_VERSION }}
-          # Copy Pull Request's tile and body to Release Note
-          release_name: ${{ github.event.pull_request.title }}
-          body: |
-            ${{ github.event.pull_request.body }}
-          draft: false
-          prerelease: false
-      - uses: actions/github-script@0.8.0
-        with:
-          github-token: ${{ secrets.GH_TOKEN }}
-          script: |
-            github.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: 'https://github.com/${{ github.repository }}/releases/tag/v${{ env.CURRENT_VERSION }} is released 🎉'
-            })
+...
