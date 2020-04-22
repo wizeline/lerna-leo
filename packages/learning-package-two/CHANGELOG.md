@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.28.0](https://github.com/wizeline/lerna-leo/compare/v0.27.0...v0.28.0) (2020-04-22)
+
+
+### Features
+
+* **publish:** update crdentials ([d1018b6](https://github.com/wizeline/lerna-leo/commit/d1018b6))
+
+
+
+
+
 # [0.27.0](https://github.com/wizeline/lerna-leo/compare/v0.26.0...v0.27.0) (2020-04-22)
 
 
