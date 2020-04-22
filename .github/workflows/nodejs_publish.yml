@@ -21,18 +21,17 @@ jobs:
         run: |
           git config --global user.name 'MartinRoman94'
           git config --global user.email 'martin.arcos@wizeline.com'
-          git remote set-url origin https://$GH_USER:$GH_TOKEN@github.com/wizeline/lerna-leo
+          git remote set-url origin https://${GH_TOKEN}@github.com/wizeline/lerna-leo1
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GH_USER: ${{ secrets.GH_USER }}
 
-      - name: Checkout and pull branch
+      - name: Checkout to master
         run: git checkout master
 
       - name: Authenticate with Registry
         run: |
-          echo "registry=http://registry.npmjs.org/" > .npmrc
-          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> .npmrc
+          echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
           npm whoami
         env:
           NPM_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
