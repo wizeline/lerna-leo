@@ -1,5 +1,5 @@
 const random1 = () => {
-    return 'hello' 
+    return 'hello v2' 
 }
 
 export default random1;
