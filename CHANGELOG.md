@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.34.0](https://github.com/wizeline/lerna-leo/compare/v0.33.0...v0.34.0) (2020-04-23)
+
+
+### Features
+
+* update readme ([8fb62da](https://github.com/wizeline/lerna-leo/commit/8fb62da))
+
+
+
+
+
 # [0.33.0](https://github.com/wizeline/lerna-leo/compare/v0.32.1...v0.33.0) (2020-04-23)
 
 
