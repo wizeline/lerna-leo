@@ -7,5 +7,5 @@
 ```
 const learningPackageOne = require('learning-package-one');
 
-// TODO: DEMONSTRATE Publish 31.4
+// TODO: DEMONSTRATE Publish Leo
 ```
