@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.31.7 (2020-04-23)
+
+**Note:** Version bump only for package @evolsignal/learning-package-two
+
+
+
+
+
 ## 0.31.6 (2020-04-23)
 
 **Note:** Version bump only for package @evolsignal/learning-package-two
