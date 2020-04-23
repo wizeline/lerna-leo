@@ -7,5 +7,5 @@
 ```
 const learningPackageOne = require('learning-package-one');
 
-// TODO: DEMONSTRATE Publish Leo 1
+// TODO: DEMONSTRATE Publish Leo 3
 ```
